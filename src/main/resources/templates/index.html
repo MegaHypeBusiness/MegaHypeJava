@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--====== Required meta tags ======-->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!--====== Title ======-->
+  <title>MegaHype</title>
+
+  <!--====== Favicon Icon ======-->
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/ico" />
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="/css/lineicons.css" />
+
+  <!--====== Tiny Slider css ======-->
+  <link rel="stylesheet" href="/css/tiny-slider.css" />
+
+  <!--====== gLightBox css ======-->
+  <link rel="stylesheet" href="/css/glightbox.min.css" />
+
+  <!--====== Custom Style css ======-->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+  <!--====== NAVBAR NINE PART START ======-->
+
+  <section class="navbar-area navbar-nine">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">
+              <img class="megahype" src="/images/megahype.png" alt="Logo" />
+            </a>
+            <div class="collapse navbar-collapse sub-menu-bar" id="navbarNine">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="page-scroll" href="#hero-area">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#services">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="page-scroll" href="#contact">Contato</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Script para navegação suave sem alterar a URL -->
+            <script>
+              document.querySelectorAll('.sub-menu-bar a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                  // Impede o comportamento padrão do link
+                  e.preventDefault();
+
+                  // Obtém o destino do link
+                  const targetId = this.getAttribute('href');
+
+                  // Rola suavemente até a seção desejada
+                  document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                  });
+
+                  // Atualiza o histórico sem adicionar a hash na URL
+                  history.pushState(null, null, window.location.pathname);
+                });
+              });
+            </script>
+            <!-- Fim do script para navegação suave sem alterar a URL -->
+          </nav>
+          <!-- navbar -->
+        </div>
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </section>
+
+  <!--====== NAVBAR NINE PART ENDS ======-->
+  <!-- Start header Area -->
+  <section id="hero-area" class="header-area header-eight">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-content">
+            <h1>MegaHype</h1>
+            <p>
+              Nessa empresa, o sucesso dos nossos clientes é a nossa principal missão. Com uma equipe apaixonada e criativa, dedicamos nosso talento para transformar visões em realidade, criando conteúdos impactantes que elevam marcas e emocionam audiências. Juntos, vamos além, sempre em busca dos melhores resultados.
+            </p>
+            <div class="button">
+              <a href="#services" class="btn primary-btn" id="servicesButton">Serviços</a>
+
+              <script>
+                document.getElementById('servicesButton').addEventListener('click', function (event) {
+                  event.preventDefault(); // Impede o comportamento padrão do link
+
+                  // Rola suavemente até a seção de serviços
+                  document.querySelector('#services').scrollIntoView({
+                    behavior: 'smooth'
+                  });
+
+                  // Atualiza o histórico sem adicionar a hash na URL
+                  history.pushState(null, null, window.location.pathname);
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="header-image">
+            <img src="/images/pexels.jpg" alt="#"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End header Area -->
+  <!-- ===== service-area start ===== -->
+  <section id="services" class="services-area services-eight">
+    <!--======  Start Section Title Five ======-->
+    <div class="section-title-five">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h6>Serviços</h6>
+              <h2 class="fw-bold">O Nosso DNA</h2>
+              <p>
+                Oferecemos diversos serviços para atender as necessidades dos nossos clientes. Criamos a identidade do produto da forma em que o cliente deseja. Clique no Ícone para ver um exemplo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!--======  End Section Title Five ======-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="openLink()">
+              <script>
+                function openLink() {
+                  window.open('https://nevesntc.tumblr.com', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Thumbnail</h4>
+              <p>
+                Oferecemos miniaturas personalizadas e modernas para o seu canal no YouTube. Transformamos suas ideias em imagens atraentes e informativas, que são a primeira impressão do seu vídeo. Nossas miniaturas ajudam você a se destacar e a capturar a atenção dos espectadores, garantindo uma apresentação visual de alta qualidade.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="OpenVideoLink()">
+              <script>
+                function OpenVideoLink() {
+                  window.open('https://youtube.com/playlist?list=PLpovQk6bHNPbC0OT6DVPfCVK1gOxMhB0z&si=ruWGWmbgWGQqiBqT', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Vídeos para Youtube</h4>
+              <p>
+                Oferecemos produção de vídeos de alta qualidade para o seu canal no YouTube. Transformamos suas ideias em conteúdo visual envolvente e profissional, ajudando você a se destacar e engajar sua audiência. Seja para vlogs, gameplays ou outros tipos de conteúdo, garantimos produtos excepcionais que elevam a qualidade do seu canal e atraem mais visualizações.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="OpenShortLink()">
+              <script>
+                function OpenShortLink() {
+                  window.open('https://drive.google.com/drive/folders/1ZEMzAugTt5dznmmLHshWU5llUyOG6eyq?usp=sharing', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Curtos</h4>
+              <p>
+                Produzimos vídeos curtos e dinâmicos com até 59 segundos. Transformamos suas ideias em conteúdos impactantes e envolventes, ideais para engajar seu público e promover sua marca nas redes sociais. Com nossa produção, você consegue criar vídeos marcantes que aumentam a visibilidade e atraem mais atenção.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="OpenReels()">
+              <script>
+                function OpenReels() {
+                  window.open('https://drive.google.com/drive/folders/1o16BPDBLrFwq1z7UICDd8wewQrcKMIns?usp=sharing', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
+                <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Reels</h4>
+              <p>
+                Produzimos vídeos curtos e envolventes para Reels, com qualquer duração. Criamos conteúdos dinâmicos e cativantes que capturam a atenção e ajudam a promover sua marca de forma eficaz. Nosso objetivo é destacar sua presença digital com vídeos impactantes e inovadores.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="OpenCasamento()">
+              <script>
+                function OpenCasamento() {
+                  window.open('https://youtube.com/playlist?list=PLpovQk6bHNPaBppVGUG0BfrIq0owv4hoQ&si=s42Gpuo0ANoaVDKG', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Casamentos e Festas</h4>
+              <p>
+                Somos especialistas na edição de vídeos de casamento e festas de 15 anos. Transformamos suas gravações em filmes emocionantes e memoráveis, destacando os momentos mais especiais do seu evento. Nossa equipe combina sensibilidade e técnica para criar uma narrativa envolvente, garantindo que cada detalhe e emoção sejam exibidos de forma única.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="single-services">
+            <div class="service-icon" onclick="OpenTrailer()">
+              <script>
+                function OpenTrailer() {
+                  window.open('https://youtube.com/playlist?list=PLpovQk6bHNPb7-bDpwrHOmVGfwcVahGce&si=hhjVNzM6X3eK9rPq', '_blank');
+                }
+              </script>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"/>
+              </svg>
+            </div>
+            <div class="service-content">
+              <h4>Trailer</h4>
+              <p>
+                Editamos trailers impactantes que destacam os pontos fortes do seu evento ou projeto. Com uma edição criativa e dinâmica, produzimos teasers envolventes que capturam a essência e despertam o interesse do seu público-alvo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== service-area end ===== -->
+ <!-- ========================= contact-section start ========================= -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4">
+        <div class="contact-item-wrapper">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-12">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="lni lni-phone"></i>
+                </div>
+                <div class="contact-content">
+                  <h4>Contato</h4>
+                  <p>megahypebusiness@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-12">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="lni lni-map-marker"></i>
+                </div>
+                <div class="contact-content">
+                  <h4>Escritório</h4>
+                  <p>Virtual</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-12">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="lni lni-alarm-clock"></i>
+                </div>
+                <div class="contact-content">
+                  <h4>Disponibilidade</h4>
+                  <p>Horário de Trabalho: 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="contact-form-wrapper">
+          <div class="row">
+            <div class="col-xl-10 col-lg-8 mx-auto">
+              <div class="section-title text-center">
+                <h2>Vamos Lá</h2>
+                <p>Preencha esses dados e clique para enviar que você será redirecionado para um contato direto conosco.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <form id="contactForm" class="contact-form">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label for="name"></label>
+                      <input type="text" name="name" id="name" placeholder="Nome" required maxlength="20" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email"></label>
+                      <input type="email" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="phone"></label>
+                        <input type="text" name="phone" id="phone" placeholder="Telefone" required maxlength="15" />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="tipo_servico"></label>
+                        <select class="form-select" name="tipoServico" id="tipo_servico" required style="margin-top: 8px;">
+                          <option value="" disabled selected>Selecione o tipo de serviço</option>
+                          <option value="Design Gráfico">Design Gráfico</option>
+                          <option value="Edição de Vídeo">Edição de Vídeo</option>
+                          <option value="Design Gráfico + Edição de Vídeo">Design Gráfico + Edição de Vídeo</option>
+                        </select>
+                      </div>
+                    </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <label for="message"></label>
+                      <textarea name="message" id="message" placeholder="Mensagem" required maxlength="500"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="button text-center rounded-buttons">
+                        <button type="submit" class="btn primary-btn rounded-full">Enviar Mensagem</button>
+                      </div>
+                      <!-- Caixa de confirmação minimalista -->
+                      <div id="confirmationMessage" style="display:none; margin-top:10px; text-align: center; margin-left: 10px; color:green; font-size:14px;">
+                        Sua mensagem foi enviada com sucesso!
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Impede o comportamento padrão do formulário
+
+          // Captura os valores dos campos
+          let name = document.getElementById('name').value;
+          let email = document.getElementById('email').value;
+          let phone = document.getElementById('phone').value;
+          let tipoServico = document.getElementById('tipo_servico').value;
+          let message = document.getElementById('message').value;
+
+          // Cria o objeto de dados
+          let data = {
+            name: name,
+            email: email,
+            phone: phone,
+            tipoServico: tipoServico,
+            message: message
+          };
+
+          // Envia os dados para o backend
+          fetch('/submit_form', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          })
+                  .then(response => response.json())
+                  .then(() => {
+                    // Exibe a mensagem de confirmação dentro do formulário
+                    let confirmationMessage = document.getElementById('confirmationMessage');
+                    confirmationMessage.style.display = 'block';
+
+                    // Oculta a mensagem após 3 segundos
+                    setTimeout(function() {
+                      confirmationMessage.style.display = 'none';
+                      location.reload(); // Recarrega a página
+                    }, 3000);
+                  })
+                  .catch(error => {
+                    console.error('Erro:', error);
+                  });
+        });
+      </script>
+
+      <!-- ========================= contact-section end ========================= -->
+  <!-- Start Footer Area -->
+  <footer class="footer-area footer-eleven">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-about">
+                <div class="logo">
+                    <img src="/images/megahype2.jpg" alt="MegaHype Image" id="logoImage" style="cursor: pointer"/>
+                  <script>
+                    document.getElementById('logoImage').addEventListener('click', function() {
+                      // Rola suavemente até a seção de serviços
+                      document.querySelector('#services').scrollIntoView({
+                        behavior: 'smooth'
+                      });
+
+                      // Atualiza o histórico sem adicionar a hash na URL
+                      history.pushState(null, null, window.location.pathname);
+                    });
+                  </script>
+                </div>
+                <p>
+                  Buscando sempre o melhor para o cliente ficar sempre satisfeito. O cliente é a nossa prioridade.
+                </p>
+                <p class="copyright-text">
+                  <span>© 2024 Megahype</span>
+                  <a href="javascript:void(0)" rel="nofollow"></a>
+                </p>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-link">
+                <h5>Redes Sociais</h5>
+                <ul>
+                  <li><a href="https://www.instagram.com/megahype_/">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/company/megahype">Linkedin</a></li>
+                </ul>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-2 col-md-6 col-12">
+              <!-- Single Widget -->
+              <div class="footer-widget f-link">
+                <h5>Suporte</h5>
+                <ul>
+                  <li><a href="#" id="supportEmail">Email</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1ahZAuneOJGRtZUF0lCERxEUIc3q39Gkt?usp=sharing">Media Kit</a></li>
+                </ul>
+
+              <script>
+                document.getElementById('supportEmail').addEventListener('click', function(event) {
+                  event.preventDefault(); // Impede o comportamento padrão do link
+
+                  // Dados do formulário ou qualquer outra informação que você queira incluir no e-mail
+                  let subject = "Estou com um problema";
+                  let body = "Olá,\n\nEstou entrando em contato porque estou com um problema. Abaixo estão os detalhes:\n\n";
+
+                  // Abre o cliente de e-mail padrão
+                  window.location.href = `mailto:megahypebusiness@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                });
+              </script>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+              </div>
+              <!-- End Single Widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
+  <a href="#" class="scroll-top btn-hover">
+    <i class="lni lni-chevron-up"></i>
+  </a>
+
+  <!--====== js ======-->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/glightbox.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/tiny-slider.js"></script>
+
+  <script>
+
+    //===== close navbar-collapse when a  clicked
+    let navbarTogglerNine = document.querySelector(
+      ".navbar-nine .navbar-toggler"
+    );
+    navbarTogglerNine.addEventListener("click", function () {
+      navbarTogglerNine.classList.toggle("active");
+    });
+
+    // ==== left sidebar toggle
+    let sidebarLeft = document.querySelector(".sidebar-left");
+    let overlayLeft = document.querySelector(".overlay-left");
+    let sidebarClose = document.querySelector(".sidebar-close .close");
+
+    overlayLeft.addEventListener("click", function () {
+      sidebarLeft.classList.toggle("open");
+      overlayLeft.classList.toggle("open");
+    });
+    sidebarClose.addEventListener("click", function () {
+      sidebarLeft.classList.remove("open");
+      overlayLeft.classList.remove("open");
+    });
+
+    // ===== navbar nine sideMenu
+    let sideMenuLeftNine = document.querySelector(".navbar-nine .menu-bar");
+
+    sideMenuLeftNine.addEventListener("click", function () {
+      sidebarLeft.classList.add("open");
+      overlayLeft.classList.add("open");
+    });
+    
+  </script>
+</body>
+
+</html>
