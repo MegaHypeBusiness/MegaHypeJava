@@ -25,7 +25,6 @@ public class FormController {
         return ResponseEntity.ok().body("{\"message\": \"Dados enviados com sucesso!\"}");
     }
 
-    // Método para enviar e-mail
     private void sendEmail(FormData formData) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo("megahypebusiness@gmail.com"); // E-mail onde você deseja receber as mensagens
