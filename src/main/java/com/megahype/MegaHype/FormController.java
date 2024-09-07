@@ -52,11 +52,11 @@ public class FormController {
         private String name;
 
         @NotNull(message = "O tipo de serviço é obrigatório")
-        private String tipoServico;
+        private final String tipoServico;
 
         @NotNull(message = "A mensagem é obrigatória")
         @Size(max = 500, message = "A mensagem não pode exceder 500 caracteres")
-        private String message;
+        private final String message;
 
         @NotNull(message = "O telefone é obrigatório")
         @Size(max = 15, message = "O telefone não pode exceder 15 caracteres")
@@ -64,7 +64,7 @@ public class FormController {
 
         @NotNull(message = "O email é obrigatório")
         @Email(message = "Email deve ser válido")
-        private String email;
+        private final String email;
 
         // Constructor
         public FormData(String name, String tipoServico, String message, String phone, String email) {
@@ -88,7 +88,6 @@ public class FormController {
             return tipoServico;
         }
 
-
         public String getMessage() {
             return message;
         }
@@ -104,6 +103,5 @@ public class FormController {
         public String getEmail() {
             return email;
         }
-
     }
 }
