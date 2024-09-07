@@ -88,16 +88,9 @@ public class FormController {
             return tipoServico;
         }
 
-        public void setTipoServico(String tipoServico) {
-            this.tipoServico = tipoServico;
-        }
 
         public String getMessage() {
             return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
         }
 
         public String getPhone() {
@@ -112,8 +105,5 @@ public class FormController {
             return email;
         }
 
-        public void setEmail(String email) {
-            this.email = email;
-        }
     }
 }
