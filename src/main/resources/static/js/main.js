@@ -39,7 +39,7 @@
                 currLink.classList.remove('active');
             }
         }
-    };
+    }
 
     window.document.addEventListener('scroll', onScroll);
 

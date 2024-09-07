@@ -66,6 +66,15 @@ public class FormController {
         @Email(message = "Email deve ser válido")
         private String email;
 
+        // Constructor
+        public FormData(String name, String tipoServico, String message, String phone, String email) {
+            this.name = name;
+            this.tipoServico = tipoServico;
+            this.message = message;
+            this.phone = phone;
+            this.email = email;
+        }
+
         // Getters e Setters
         public String getName() {
             return name;
@@ -79,8 +88,16 @@ public class FormController {
             return tipoServico;
         }
 
+        public void setTipoServico(String tipoServico) {
+            this.tipoServico = tipoServico;
+        }
+
         public String getMessage() {
             return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
         }
 
         public String getPhone() {
@@ -93,6 +110,10 @@ public class FormController {
 
         public String getEmail() {
             return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
         }
     }
 }
