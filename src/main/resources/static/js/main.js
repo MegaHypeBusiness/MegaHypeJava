@@ -4,8 +4,8 @@
     Sticky
     ======================================= */
     window.onscroll = function () {
-        var header_navbar = document.querySelector(".navbar-area");
-        var sticky = header_navbar.offsetTop;
+        let header_navbar = document.querySelector(".navbar-area");
+        let sticky = header_navbar.offsetTop;
 
         if (window.pageYOffset > sticky) {
             header_navbar.classList.add("sticky");
@@ -13,10 +13,8 @@
             header_navbar.classList.remove("sticky");
         }
 
-
-
         // show or hide the back-top-top button
-        var backToTo = document.querySelector(".scroll-top");
+        let backToTo = document.querySelector(".scroll-top");
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             backToTo.style.display = "flex";
         } else {
@@ -25,29 +23,28 @@
     };
 
     // section menu active
-	function onScroll(event) {
-		var sections = document.querySelectorAll('.page-scroll');
-		var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    function onScroll() {
+        let sections = document.querySelectorAll('.page-scroll');
+        let scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
-		for (var i = 0; i < sections.length; i++) {
-			var currLink = sections[i];
-			var val = currLink.getAttribute('href');
-			var refElement = document.querySelector(val);
-			var scrollTopMinus = scrollPos + 73;
-			if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
-				document.querySelector('.page-scroll').classList.remove('active');
-				currLink.classList.add('active');
-			} else {
-				currLink.classList.remove('active');
-			}
-		}
-	};
+        for (let i = 0; i < sections.length; i++) {
+            let currLink = sections[i];
+            let val = currLink.getAttribute('href');
+            let refElement = document.querySelector(val);
+            let scrollTopMinus = scrollPos + 73;
+            if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+                document.querySelector('.page-scroll').classList.remove('active');
+                currLink.classList.add('active');
+            } else {
+                currLink.classList.remove('active');
+            }
+        }
+    };
 
     window.document.addEventListener('scroll', onScroll);
 
-
-    // for menu scroll 
-    var pageLink = document.querySelectorAll('.page-scroll');
+    // for menu scroll
+    let pageLink = document.querySelectorAll('.page-scroll');
 
     pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
@@ -59,8 +56,6 @@
         });
     });
 
-
     "use strict";
 
-
-}) ();
+})();

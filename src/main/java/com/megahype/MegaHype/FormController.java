@@ -46,9 +46,7 @@ public class FormController {
         mailSender.send(message);
     }
 
-    // Classe de dados com validações
     public static class FormData {
-
         @NotNull(message = "O nome é obrigatório")
         @Size(max = 20, message = "O nome não pode exceder 20 caracteres")
         private String name;
@@ -81,16 +79,8 @@ public class FormController {
             return tipoServico;
         }
 
-        public void setTipoServico(String tipoServico) {
-            this.tipoServico = tipoServico;
-        }
-
         public String getMessage() {
             return message;
-        }
-
-        public void setMessage(String message) {
-            this.message = message;
         }
 
         public String getPhone() {
@@ -103,10 +93,6 @@ public class FormController {
 
         public String getEmail() {
             return email;
-        }
-
-        public void setEmail(String email) {
-            this.email = email;
         }
     }
 }
