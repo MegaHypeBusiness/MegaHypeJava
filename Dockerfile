@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copie o arquivo JAR gerado pelo build do projeto para o contêiner
-COPY target/MegaHypeJavaVercel-0.0.1-SNAPSHOT.jar /app/app.jar
+COPY target/MegaHype-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Exponha a porta na qual a aplicação Spring Boot vai rodar (geralmente a 8080)
 EXPOSE 8080
